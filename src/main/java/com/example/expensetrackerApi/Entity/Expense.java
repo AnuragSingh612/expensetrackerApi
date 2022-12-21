@@ -21,9 +21,12 @@ public class Expense {
     @Column(name="expense_name")
     @NotBlank(message = "Expense name must not be null")
     private String name;
+    @Column(name="description")
     private String description;
     @Column(name="expense_amount")
     private BigDecimal amount;
+    @Column(name="category")
     private String category;
+    @Column(name="date")
     private Date date;
 }
