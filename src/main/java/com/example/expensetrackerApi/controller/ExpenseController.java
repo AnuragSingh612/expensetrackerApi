@@ -39,25 +39,4 @@ public class ExpenseController {
     public Expense saveExpenseDetails(@Valid @RequestBody Expense expense) {
         return expenseService.SaveExpenseDetails(expense);
     }
-
-//    @PutMapping("/expenses/{id}")
-//    public Expense updateExpenseDetails(@RequestBody Expense expense, @PathVariable Long id){
-//        return expenseService.updateExpenseDetails(id, expense);
-//    }
-//
-//    @GetMapping("/expenses/category")
-//    public List<Expense> getExpensesByCategory(@RequestParam String category, Pageable page) {
-//        return expenseService.readByCategory(category, page);
-//    }
-//
-//    @GetMapping("/expenses/name")
-//    public List<Expense> getExpensesByName(@RequestParam String keyword, Pageable page) {
-//        return expenseService.readByName(keyword, page);
-//    }
-//
-//    @GetMapping("/expenses/date")
-//    public List<Expense> getExpensesByDates(@RequestParam(required = false) Date startDate,
-//                                            @RequestParam(required = false) Date endDate,
-//                                            Pageable page) {
-//        return expenseService.readByDate(startDate, endDate, page);
 }
